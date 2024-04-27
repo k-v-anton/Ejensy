@@ -1,0 +1,58 @@
+export const sliderData = [
+  {
+    id: 1,
+    name: 'Hawaiian party',
+    dateCreate: '13.02.2023',
+    image: require('../../assets/images/slider/1.jpg'),
+    mooreInformation: {},
+  },
+  {
+    id: 2,
+    name: 'Мafia party',
+    dateCreate: '13.02.2023',
+    image: require('../../assets/images/slider/2.jpg'),
+    mooreInformation: {},
+  },
+  {
+    id: 3,
+    name: 'Party',
+    dateCreate: '13.02.2023',
+    image: require('../../assets/images/slider/3.jpg'),
+    mooreInformation: {},
+  },
+  {
+    id: 4,
+    name: 'Party on the beach',
+    dateCreate: '13.02.2023',
+    image: require('../../assets/images/slider/4.jpg'),
+    mooreInformation: {},
+  },
+  {
+    id: 5,
+    name: 'Home Security',
+    dateCreate: '13.02.2023',
+    image: require('../../assets/images/slider/5.jpg'),
+    mooreInformation: {},
+  },
+  {
+    id: 6,
+    name: 'Network Design & Implementation',
+    dateCreate: '13.02.2023',
+    image: require('../../assets/images/slider/6.jpg'),
+    mooreInformation: {},
+  },
+  {
+    id: 7,
+    name: 'System Design & Engineering',
+    dateCreate: '13.02.2023',
+    image: require('../../assets/images/slider/7.jpg'),
+    mooreInformation: {},
+  },
+  {
+    id: 8,
+    name: 'Client Care Plans',
+    dateCreate: '13.02.2023',
+    image: require('../../assets/images/slider/8.jpg'),
+    mooreInformation: {},
+  },
+]

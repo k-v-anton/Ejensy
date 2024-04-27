@@ -2,11 +2,12 @@ import { yupResolver } from '@hookform/resolvers/yup'
 import { useEffect } from 'react'
 import { useForm } from 'react-hook-form'
 import * as yup from 'yup'
+import { ArrowRight } from '../../assets/svg/ArrowRight'
 import { SubmitBtn } from '../../buttons/SubmitBtn/SubmitBtn'
+import { useWindowSize } from '../../hooks/useWindowSize'
 import { popupFormState } from '../../store/popupStore'
 import { EmailSelector } from '../selectors/EmailSelector'
 import styles from './Footer.module.scss'
-import { useWindowSize } from '../../hooks/useWindowSize'
 
 const userSchema = yup.object({
   email: yup.string().email('Email is not valid').required('Email is required'),
@@ -26,7 +27,7 @@ export const Footer = () => {
     resolver: yupResolver(userSchema),
   })
 
-  const {height} = useWindowSize()
+  const { height } = useWindowSize()
 
   const onSubmit = (data) => {
     popupFormState.open(
@@ -37,7 +38,7 @@ export const Footer = () => {
   }
 
   const handleClickAllEvents = () => {
-    window.scrollTo({behavior: 'smooth', top: height})
+    window.scrollTo({ behavior: 'smooth', top: height })
   }
 
   useEffect(() => {
@@ -58,7 +59,10 @@ export const Footer = () => {
         />
         <SubmitBtn />
       </form>
-      <button onClick={handleClickAllEvents}>go to slider</button>
+      <button onClick={handleClickAllEvents} className={styles.otherEventsBtn}>
+        Other Events
+        <ArrowRight />
+      </button>
     </footer>
   )
 }
