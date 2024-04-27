@@ -1,0 +1,20 @@
+.input {
+  flex: 1;
+  border: none;
+  margin: 16px 27px;
+
+  &::placeholder {
+
+    font-family: roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+
+  @media (max-width:768px) {
+    margin: 10px 20px;
+  }
+}

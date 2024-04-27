@@ -1,0 +1,85 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100dvh;
+  background: rgba(22, 44, 78, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 
+    scale .3s ease-in-out, 
+    opacity .3s ease-in-out, 
+    visibility .3s ease-in-out;
+}
+
+.open {
+  visibility: visible;
+  scale: 1;
+  opacity: 1;
+}
+
+.close {
+  visibility: hidden;
+  scale: 0.5;
+  opacity: 0;
+}
+
+.content {
+  width: 320px;
+  height: 370px;
+
+  background: #FFFFFF;
+  border: 1px solid rgba(19, 89, 120, 0.07);
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+
+
+.wrapperCross {
+
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+
+.cross {
+  width: 57px;
+  height: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 104%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #162C4E;
+}
+
+
+
+.closeBtn {
+  background: #1D4169;
+  border-radius: 40px;
+  font-size: 18px;
+  line-height: 150%;
+  color: #FFFFFF;
+  padding: 16px 74px;
+}

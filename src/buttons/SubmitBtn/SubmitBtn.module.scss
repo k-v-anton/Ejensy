@@ -1,0 +1,17 @@
+.submit {
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  background: #DF2224;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 8px;
+
+
+  @media (max-width: 768px) {
+    margin: 4px;
+  }
+}

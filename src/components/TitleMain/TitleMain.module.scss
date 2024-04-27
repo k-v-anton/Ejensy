@@ -1,0 +1,33 @@
+.titleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 32px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 40px;
+  }
+}
+
+.title {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 104%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #162C4E;
+  opacity: 0.39;
+  margin-bottom: 8px;
+
+  @media (max-width: 768px) {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 320px) {
+    margin-bottom: 16px;
+  }
+}

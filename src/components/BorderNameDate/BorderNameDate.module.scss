@@ -1,0 +1,38 @@
+.nameTime {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  &>p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #FFFFFF;
+    text-transform: capitalize;
+
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
+  }
+}
+
+.borderNameDate {
+  width: 132px;
+  height: 54px;
+
+  path {
+    fill: #DF2224
+  }
+
+  @media (max-width:768px) {
+    width: 64px;
+    height: 40px;
+  }
+}

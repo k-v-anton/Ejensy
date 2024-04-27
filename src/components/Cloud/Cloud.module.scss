@@ -1,0 +1,50 @@
+.cloud {
+  position: absolute;
+  width: 865px;
+  height: 714px;
+  fill: #162C4E;
+
+  @media (max-width: 768px) {
+    width: 478px;
+    height: 394px;
+  }
+
+  @media (max-width: 320) {
+    width: 366px;
+    height: 302px;
+  }
+}
+
+.left {
+  transform: rotate(-24deg);
+  left: -433px;
+  top: -317px;
+
+  @media (max-width: 768px) {
+    left: -228px;
+    top: -197px;
+  }
+
+  @media (max-width: 320px) {
+    left: -270px;
+    top: -250px;
+  }
+}
+
+.right {
+
+  right: -531px;
+  top: -475px;
+  transform: rotate(-77.43deg);
+
+  @media (max-width: 768px) {
+    right: -280px;
+    top: -233px;
+    transform: rotate(-84.96deg);
+  }
+
+  @media (max-width: 320px) {
+    right: -300px;
+    top: -265px;
+  }
+}

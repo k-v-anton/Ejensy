@@ -1,0 +1,19 @@
+.ourEvents {
+  margin: 12px auto;
+  display: flex;
+  gap: 33px;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 20px 17px 28px;
+  background: #1D4169;
+  border-radius: 40px;
+  font-weight: 400;
+  font-size: 18px;
+  text-decoration: none;
+  line-height: 150%;
+  color: #FFFFFF;
+
+  @media (max-width: 768px) {
+    margin: 15px auto;
+  }
+}
