@@ -5,7 +5,7 @@ export const Header = () => {
 
   return (
     <header className={styles.header}>
-      <a href='#'><Logo /></a>
+      <a href='#' className={styles.linkLogo}><Logo /></a>
     </header>
   )
 }

@@ -1,9 +1,7 @@
 import { TextContent } from '../TextContent'
 import styles from './TitleMain.module.scss'
 
-export const TitleMain = (props) => {
-  const {} = props
-
+export const TitleMain = () => {
   return (
     <div className={styles.titleContainer}>
       <h1 className={styles.title}>Under Construction</h1>

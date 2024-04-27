@@ -1,3 +1,5 @@
+@use '../../styles/keyframes.scss';
+
 .header {
   padding: 110px 16px 93px 16px;
   display: flex;
@@ -11,4 +13,11 @@
   @media (max-width: 320px) {
     padding: 80px 16px 66px 16px;
   }
+}
+
+.linkLogo {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(0, -100%);
+  animation: showElement .8s ease-in-out .4s forwards;
 }

@@ -19,15 +19,18 @@
   transform: rotate(-24deg);
   left: -433px;
   top: -317px;
+  animation: showLeftPC 1.8s ease-in-out;
 
   @media (max-width: 768px) {
     left: -228px;
     top: -197px;
+    animation: showLeftPad 1.8s ease-in-out;
   }
 
   @media (max-width: 320px) {
     left: -270px;
     top: -250px;
+    animation: showLeftMobile 1.8s ease-in-out;
   }
 }
 
@@ -36,14 +39,89 @@
   right: -531px;
   top: -475px;
   transform: rotate(-77.43deg);
+  animation: showRightPC 1.8s ease-in-out;
 
   @media (max-width: 768px) {
     right: -280px;
     top: -233px;
     transform: rotate(-84.96deg);
+    animation: showRightPad 1.8s ease-in-out;
   }
 
   @media (max-width: 320px) {
+    right: -300px;
+    top: -265px;
+    animation: showRightMobile 1.8s ease-in-out;
+  }
+}
+
+@keyframes showLeftPC {
+  0% {
+    left: -100%;
+    top: -100%;
+  }
+
+  100% {
+    left: -433px;
+    top: -317px;
+  }
+}
+
+@keyframes showRightPC {
+  0% {
+    right: -100%;
+    top: -100%;
+  }
+
+  100% {
+    right: -531px;
+    top: -475px;
+  }
+}
+
+@keyframes showLeftPad {
+  0% {
+    right: -100%;
+    top: -100%;
+  }
+
+  100% {
+    left: -228px;
+    top: -197px;
+  }
+}
+
+@keyframes showRightPad {
+  0% {
+    right: -100%;
+    top: -100%;
+  }
+
+  100% {
+    right: -280px;
+    top: -233px
+  }
+}
+
+@keyframes showLeftMobile {
+  0% {
+    right: -100%;
+    top: -100%;
+  }
+
+  100% {
+    left: -270px;
+    top: -250px
+  }
+}
+
+@keyframes showRightMobile {
+  0% {
+    right: -100%;
+    top: -100%;
+  }
+
+  100% {
     right: -300px;
     top: -265px;
   }

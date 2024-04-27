@@ -6,6 +6,7 @@ import { SubmitBtn } from '../../buttons/SubmitBtn/SubmitBtn'
 import { popupFormState } from '../../store/popupStore'
 import { EmailSelector } from '../selectors/EmailSelector'
 import styles from './Footer.module.scss'
+import { useWindowSize } from '../../hooks/useWindowSize'
 
 const userSchema = yup.object({
   email: yup.string().email('Email is not valid').required('Email is required'),
@@ -25,12 +26,18 @@ export const Footer = () => {
     resolver: yupResolver(userSchema),
   })
 
+  const {height} = useWindowSize()
+
   const onSubmit = (data) => {
     popupFormState.open(
       'SUCCESS!2222',
       'You have successfully subscribed to the email newsletter'
     )
     reset()
+  }
+
+  const handleClickAllEvents = () => {
+    window.scrollTo({behavior: 'smooth', top: height})
   }
 
   useEffect(() => {
@@ -51,6 +58,7 @@ export const Footer = () => {
         />
         <SubmitBtn />
       </form>
+      <button onClick={handleClickAllEvents}>go to slider</button>
     </footer>
   )
 }

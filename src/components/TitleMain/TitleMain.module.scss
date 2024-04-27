@@ -1,9 +1,15 @@
+@use '../../styles/keyframes.scss';
+
 .titleContainer {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   margin-bottom: 32px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(0, -100%);
+  animation: showElement .8s ease-in-out .6s forwards;
 
   @media (max-width: 768px) {
     margin-bottom: 40px;

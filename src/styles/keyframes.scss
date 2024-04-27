@@ -1,0 +1,19 @@
+@keyframes showElement {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(0, -100%);
+  }
+
+  50% {
+    visibility: hidden;
+    opacity: 0.2;
+    transform: translate(0, -50%);
+  }
+
+  100% {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}

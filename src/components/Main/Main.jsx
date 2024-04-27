@@ -9,8 +9,10 @@ export const Main = () => {
     <main className={styles.main}>
       <TitleMain />
       <Countdown dateEnd={'07.24.2024'} />
-      <TextContent text='Check our event page when you wait:' />
-      <ButtonEvent name='Go to the event' />
+      <div className={styles.showContainer}>
+        <TextContent text='Check our event page when you wait:' />
+        <ButtonEvent name='Go to the event' />
+      </div>
     </main>
   )
 }

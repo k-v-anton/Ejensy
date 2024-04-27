@@ -1,16 +1,15 @@
+@use '../../styles/keyframes.scss';
+
 .main {
   flex: 1;
   display: flex;
   align-items: center;
   flex-direction: column;
-  overflow: auto;
-  padding-bottom: 192px;
+}
 
-  @media (max-width: 768px) {
-    padding-bottom: 160px;
-  }
-
-  @media (max-width: 320px) {
-    padding-bottom: 141px;
-  }
+.showContainer {
+  opacity: 0;
+  visibility: visible;
+  transform: translate(0, -100%);
+  animation: showElement .8s ease-in-out 1s forwards;
 }
